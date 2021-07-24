@@ -1,9 +1,12 @@
-function App() {
-  return (
-    <div className="App">
-      Hope fully we I make sth amazing with book store BOOKStore
-    </div>
-  );
-}
+import React from 'react';
+import BooksList from './BooksList';
+import BooksForm from './BooksForm';
+
+const App = () => (
+  <div className="App">
+    <BooksForm />
+    <BooksList />
+  </div>
+);
 
 export default App;
