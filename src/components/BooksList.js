@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const BookList = () => (
   <table>
@@ -12,4 +13,4 @@ const BookList = () => (
   </table>
 );
 
-export default BookList;
+export default connect()(BookList);
