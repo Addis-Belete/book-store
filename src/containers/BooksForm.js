@@ -1,6 +1,7 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
+import createBook from '../actions/index';
+import store from '../reducers';
 
 const BooksForm = () => {
   const [book, setBook] = useState({
@@ -20,6 +21,9 @@ const BooksForm = () => {
       });
     }
   };
+  const handleSubmit = () => {
+    store.dispatch(createBook(book));
+  };
 
   const bookCategory = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
@@ -32,7 +36,7 @@ const BooksForm = () => {
 
       </select>
 
-      <button type="submit">Add Book</button>
+      <button type="submit" onClick={handleSubmit}>Add Book</button>
     </div>
   );
 };
