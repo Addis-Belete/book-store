@@ -1,5 +1,6 @@
+/* eslint-disable import/extensions */
 import { combineReducers, createStore } from 'redux';
-import bookReducer from './Books';
+import bookReducer from './Books.js';
 
 const rootReducer = combineReducers({
   bookReducer,
