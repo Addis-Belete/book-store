@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 
 const BooksForm = () => {
-  const [setBook] = useState({
+  const [book, setBook] = useState({
     title: '',
     category: '',
   });
@@ -23,8 +24,8 @@ const BooksForm = () => {
   const bookCategory = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div className="book-form">
-      <input type="text" id="book-title" placeholder="Add title" onChange={(e) => handleChange(e.target.innerText)} />
-      <select name="Book-Category" id="select">
+      <input type="text" id="book-title" placeholder="Add title" onChange={handleChange} />
+      <select name="Book-Category" id="book-category" onChange={handleChange}>
         {bookCategory.map((x, i) => (
           <option key={i}>{x}</option>
         ))}
