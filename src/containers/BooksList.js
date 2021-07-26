@@ -1,9 +1,10 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { connect } from 'react-redux';
-
+import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-const BookList = () => (
+const BookList = ({ books }) => (
   <table>
     <thead>
       <tr>
@@ -13,10 +14,20 @@ const BookList = () => (
 
       </tr>
     </thead>
-    <Book />
+    <Book books={books} />
 
   </table>
 );
+BookList.propTypes = {
+  books: PropTypes.array,
 
-export default connect(
-)(BookList);
+};
+BookList.defaultProps = {
+  books: [],
+
+};
+const mapStateToProps = (state) => ({
+  books: state.bookReducer.books,
+
+});
+export default connect(mapStateToProps)(BookList);

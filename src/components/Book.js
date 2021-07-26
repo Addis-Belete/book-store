@@ -1,9 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import store from '../reducers';
 
-const state = store.getState();
-const { books } = state.bookReducer;
-const Book = () => (
+const Book = ({ books }) => (
   <tbody>
     {books.map((book) => (
       <tr key={book.id}>
