@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions';
 
 const initialState = {
@@ -23,8 +24,8 @@ const bookReducer = (state = initialState, action) => {
 
     case REMOVE_BOOK:
       return {
-        books: state.slice(0, state.findIndex((ele) => ele.Id === action.book))
-          .concat(state.slice(state.findIndex((ele) => ele.Id === action.book) + 1, state.length)),
+        ...state,
+        books: state.books.filter((item, index) => index !== action.payload),
       };
 
     default:

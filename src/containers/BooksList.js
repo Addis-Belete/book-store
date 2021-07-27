@@ -7,8 +7,8 @@ import store from '../reducers';
 import { removeBook } from '../actions';
 
 const BookList = ({ books }) => {
-  const handleRemoveBook = (id) => {
-    store.dispatch(removeBook(id));
+  const handleRemoveBook = (index) => {
+    store.dispatch(removeBook(index));
   };
 
   return (

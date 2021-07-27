@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Book = ({ books }) => (
+const Book = ({ books, remove }) => (
   <tbody>
-    {books.map((book) => (
+    {books.map((book, i) => (
       <tr key={book.id}>
         <th>{book.id}</th>
         <th>{book.title}</th>
         <th>{book.category}</th>
-        <th><button type="button" className="btn">X</button></th>
+        <th><button type="button" className="btn" onClick={() => { remove(i); }}>X</button></th>
 
       </tr>
 
