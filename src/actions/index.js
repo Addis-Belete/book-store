@@ -4,7 +4,7 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 const createBook = (book) => ({
   type: CREATE_BOOK,
   book: {
-    Id: Math.floor(Math.random() * 30),
+    id: Math.floor(Math.random() * 30),
     title: book.title,
     category: book.category,
   },

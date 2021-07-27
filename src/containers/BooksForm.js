@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
-import createBook from '../actions/index';
+import { createBook } from '../actions/index';
 import store from '../reducers';
 
 const BooksForm = () => {
@@ -10,33 +10,37 @@ const BooksForm = () => {
   });
 
   const handleChange = (e) => {
-    if (e.target.id === ' book-tilt') {
-      setBook({
-        title: e.target.innerText,
-      });
-    } else if (e.target.id === 'book-category') {
-      setBook({
-        category: e.target.innerText,
+    const { name, value } = e.target;
+    setBook({
+      ...book,
+      [name]: value,
 
-      });
-    }
+    });
   };
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     store.dispatch(createBook(book));
+    setBook({
+      title: '',
+      category: '',
+    });
+    e.preventDefault();
   };
 
   const bookCategory = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const { title, category } = book;
   return (
     <div className="book-form">
-      <input type="text" id="book-title" placeholder="Add title" onChange={handleChange} />
-      <select name="Book-Category" id="book-category" onChange={handleChange}>
-        {bookCategory.map((x, i) => (
-          <option key={i}>{x}</option>
-        ))}
+      <form>
+        <input id="book" name="title" placeholder="Add title" value={title} onChange={handleChange} />
+        <select name="category" id="book-category" onChange={handleChange} value={category}>
+          {bookCategory.map((x, i) => (
+            <option key={i}>{x}</option>
+          ))}
 
-      </select>
+        </select>
 
-      <button type="submit" onClick={handleSubmit}>Add Book</button>
+        <button type="submit" onClick={handleSubmit}>Add Book</button>
+      </form>
     </div>
   );
 };
