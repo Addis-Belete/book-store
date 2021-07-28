@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Book = ({ books, remove }) => (
   <tbody>
@@ -18,11 +17,5 @@ const Book = ({ books, remove }) => (
   </tbody>
 
 );
-Book.propTypes = {
-  books: PropTypes.object,
-  remove: PropTypes.func.isRequired,
-};
-Book.defaultProps = {
-  books: {},
-};
+
 export default Book;
