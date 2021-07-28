@@ -4,6 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import store from './reducers/index';
+import './fonts/Montserrat/Montserrat-Bold.ttf';
 
 ReactDOM.render(
   <Provider store={store}>
