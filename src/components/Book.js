@@ -1,20 +1,34 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ books, remove }) => (
-  <tbody>
+  <div>
     {books.map((book) => (
-      <tr key={book.id}>
-        <th>{book.id}</th>
-        <th>{book.title}</th>
-        <th>{book.category}</th>
-        <th><button type="button" className="btn" onClick={() => { remove(book); }}>X</button></th>
+      <div>
+        <div>
+          <h4>{book.category}</h4>
+          <h2>{book.title}</h2>
+          <p>Frank Herbert</p>
+          <p><button type="button" className="btn" onClick={() => { remove(book); }}>Remove</button></p>
+        </div>
+        <div>
+          <p />
+        </div>
+        <div>
+          <h4>CURRENT CHAPTER</h4>
+          <p>
+            Chapter 3:
+            "A Lesson Learned"
 
-      </tr>
+          </p>
+        </div>
+      </div>
 
     ))}
 
-  </tbody>
+  </div>
 
 );
 Book.propTypes = {
