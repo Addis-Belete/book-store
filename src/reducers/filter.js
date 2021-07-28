@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-expressions */
 import { FILTER_BOOK } from '../actions';
 
 const initialState = 'All';

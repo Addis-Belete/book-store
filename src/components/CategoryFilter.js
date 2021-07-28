@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,8 +5,8 @@ const category = ['All', ' Action', 'Biography', 'History', 'Horror', 'Kids', 'L
 
 const CategoryFilter = ({ handleChange }) => (
   <form id="filter">
-    <label>
-      Filter By Category
+    <label htmlFor="Filter">
+
       <br />
 
       <select name="filter" id="fil" onChange={handleChange}>

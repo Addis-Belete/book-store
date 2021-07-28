@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { createBook } from '../actions/index';
 import store from '../reducers';
@@ -33,8 +32,8 @@ const BooksForm = () => {
       <form>
         <input id="book" name="title" placeholder="Add title" value={title} onChange={handleChange} />
         <select name="category" id="book-category" onChange={handleChange} value={category}>
-          {bookCategory.map((x, i) => (
-            <option key={i}>{x}</option>
+          {bookCategory.map((x) => (
+            <option key={x}>{x}</option>
           ))}
 
         </select>

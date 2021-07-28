@@ -1,8 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable array-callback-return */
-/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -45,11 +40,19 @@ const BookList = ({ books, filter }) => {
   );
 };
 BookList.propTypes = {
-  books: PropTypes.array,
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      category: PropTypes.string,
+    }),
+  ),
+  filter: PropTypes.string,
 
 };
 BookList.defaultProps = {
   books: [],
+  filter: '',
 
 };
 const mapStateToProps = (state) => ({
