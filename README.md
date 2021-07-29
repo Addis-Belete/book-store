@@ -2,7 +2,7 @@
 
 # Book-Store
 
-> ![screenshot](Assets/App.png)
+> ![screenshot](Assets/App1.png)
 
 ## Built With
 
