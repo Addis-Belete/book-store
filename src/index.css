@@ -301,7 +301,7 @@
   color: #c4c4c4;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1001px) {
   .user-icon {
     margin-right: 0;
   }
