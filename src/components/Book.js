@@ -6,15 +6,19 @@ import PropTypes from 'prop-types';
 const Book = ({ books, remove }) => (
   <div>
     {books.map((book) => (
-      <div>
-        <div>
+      <div className="book-detail">
+        <div className="desc">
           <h4>{book.category}</h4>
           <h2>{book.title}</h2>
           <p>Frank Herbert</p>
-          <p><button type="button" className="btn" onClick={() => { remove(book); }}>Remove</button></p>
+          <div className="links">
+            <p>Comments</p>
+            <p><button type="button" className="btn" onClick={() => { remove(book); }}>Remove</button></p>
+            <p className="edit">Edit</p>
+          </div>
         </div>
         <div>
-          <p />
+          <p>Progress bar</p>
         </div>
         <div>
           <h4>CURRENT CHAPTER</h4>
@@ -23,6 +27,7 @@ const Book = ({ books, remove }) => (
             "A Lesson Learned"
 
           </p>
+          <button type="button">UPDATE PROGRESS</button>
         </div>
       </div>
 

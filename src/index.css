@@ -74,7 +74,7 @@ margin-left:6.25rem ;
 width:15rem;
 height: 2.313rem;
 margin: 0.375rem 2.938rem 0.125rem 0;
-font-family: Montserrat;
+font-family: "Montserrat";
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -112,5 +112,92 @@ color:#0290ff;
 font-size: 1.063rem;
 margin-top: 14px;
 margin-left: 15px;
+}
+
+/*Book body*/
+
+.book-detail{
+box-sizing: border-box;
+width: 75rem;
+height: 10.625rem;
+margin-left: 6.25rem;
+margin-top:2.375rem ;
+display: flex;
+justify-content: space-between;
+  padding: 2rem 7.438rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+
+}
+
+.book-detail .desc h4{
+width: 7rem;
+  height: 1.125rem;
+  margin: 0 4rem 0 0;
+  opacity: 0.5;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+color: #121212;
+}
+.book-detail .desc h2{
+width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: "RobotoSlab";
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+color:#121212;
+}
+.book-detail .desc p{
+ width: 5.813rem;
+  height: 1.188rem;
+  margin: 0.25rem 0.875rem 0 0;
+  font-family: "RobotoSlab";
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+
+}
+
+.book-detail .desc .links{
+display: flex;
+margin-top: 1.313rem;
+}
+.book-detail .desc .links p{
+width: 4.563rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+
+}
+.book-detail .desc .links p button{
+border: none;
+background-color: white;
+ width: 3.375rem;
+  height: 1.188rem;
+  margin: -2px 0.938rem 0.125rem 0.875rem;
+  font-family: "RobotoSlab";
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+.book-detail .desc .links .edit{
+ margin: 0.188rem 18.625rem 0.125rem 1.063rem;
+
 }
 
