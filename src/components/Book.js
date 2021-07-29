@@ -2,6 +2,8 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = ({ books, remove }) => (
   <div>
@@ -17,8 +19,23 @@ const Book = ({ books, remove }) => (
             <p className="edit">Edit</p>
           </div>
         </div>
-        <div>
-          <p>Progress bar</p>
+        <div className="progress-bar">
+          <div className="outer-circle">
+            <div style={{ width: 68, height: 68 }} className="circle-bar">
+              <CircularProgressbar
+                value={book.id}
+                styles={buildStyles({
+                  pathColor: '#0290ff',
+
+                })}
+              />
+            </div>
+          </div>
+          <div>
+            <h4>{`${book.id}%`}</h4>
+            <p>Completed</p>
+          </div>
+
         </div>
         <div className="book-chapter">
           <h4>CURRENT CHAPTER</h4>
