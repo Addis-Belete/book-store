@@ -4,7 +4,7 @@ const FILTER_BOOK = 'FILTER_BOOK';
 const createBook = (book) => ({
   type: CREATE_BOOK,
   book: {
-    id: Math.floor(Math.random() * 30),
+    id: Math.floor(Math.random() * 101),
     title: book.title,
     category: book.category,
   },
