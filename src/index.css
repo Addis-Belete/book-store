@@ -114,10 +114,6 @@
   font-family: 'Roboto Slab', serif;
   font-size: 0.868rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
 }
 
@@ -174,11 +170,6 @@
   opacity: 0.5;
   font-family: 'Roboto Slab', serif;
   font-size: 0.79rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -188,10 +179,6 @@
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-family: 'Roboto Slab', serif;
   font-size: 0.9rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
 }
 
@@ -203,10 +190,6 @@
   border-radius: 3px;
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
@@ -228,10 +211,6 @@
   margin: 1.813rem 32.75rem 0 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
 }
@@ -297,10 +276,6 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   margin-top: 1rem;
 }
 
@@ -311,11 +286,7 @@
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  
 }
 
 ::placeholder {
@@ -331,7 +302,7 @@
   color: #c4c4c4;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .user-icon {
     margin-right: 0;
   }
