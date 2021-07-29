@@ -35,7 +35,7 @@ font-family: "Montserrat";
 
 }
 .nav .nav-one p{
-width: 3.688rem;
+
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: "Montserrat";
@@ -241,7 +241,7 @@ color:#888888;
  width: 41.5rem;
   height: 2.813rem;
   margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  padding: 0.813rem 0 0.813rem 1.063rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
 box-sizing: border-box;
@@ -323,9 +323,23 @@ width: 5rem;
   letter-spacing: normal;
 
 }
+::placeholder {
+width: 4.75rem;
+  height: 1.188rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+color: #c4c4c4;
+}
+
 
 @media screen and (max-width:700px) {
 .user-icon{
 margin-right: 0;
 }	
 }
+

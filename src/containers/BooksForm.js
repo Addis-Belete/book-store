@@ -36,7 +36,7 @@ const BooksForm = () => {
           {bookCategory.map((x) => {
             if (x === 'Category') {
               return (
-                <option key={x} hidden>{x}</option>
+                <option key={x} hidden className="place">{x}</option>
               );
             }
 
