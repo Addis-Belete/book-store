@@ -12,7 +12,7 @@ const Book = ({ books, remove }) => (
           <h2>{book.title}</h2>
           <p>Frank Herbert</p>
           <div className="links">
-            <p>Comments</p>
+            <p className="comment">Comments</p>
             <p><button type="button" className="btn" onClick={() => { remove(book); }}>Remove</button></p>
             <p className="edit">Edit</p>
           </div>
@@ -20,7 +20,7 @@ const Book = ({ books, remove }) => (
         <div>
           <p>Progress bar</p>
         </div>
-        <div>
+        <div className="book-chapter">
           <h4>CURRENT CHAPTER</h4>
           <p>
             Chapter 3:
