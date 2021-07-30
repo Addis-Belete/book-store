@@ -7,10 +7,13 @@
 
 ## Built With
 
+- Node.js
 - React
-- Redux
-- Webpack
-- CSS3
+- React-DOM
+- React-Create-App
+- npm
+- CSS
+- ES6
 
 ## Live Demo
 
