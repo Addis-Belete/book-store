@@ -2,7 +2,7 @@
 
 # Book-Store
 
-> Book-store is created desktop-only app for storing dispalying and removing books in library using react-redux.  
+> Book-store has created a desktop-only app for storing displaying and removing books in the library using react-redux.
 > ![screenshot](Assets/App1.png)
 
 ## Built With
